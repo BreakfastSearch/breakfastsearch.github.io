@@ -6,6 +6,16 @@ p {
     font-family: Roboto, sans-serif;
 }
 
+
+
+article h1 {
+    font-size: 24px;
+}
+
+article {
+    border-top: 2px solid black;
+}
+
 :not(p) {
     font-family: 'Bai Jamjuree'
 }
@@ -13,6 +23,17 @@ p {
 .main-container {
     display: flex;
     flex-direction: row;
+}
+
+@media (max-width: 600px) {
+    .main-container {
+        flex-direction: column
+    }
+
+    .left-container {
+        width: 100%;
+        margin: 0;
+    }
 }
 
 .left-container {
@@ -52,7 +73,8 @@ p {
     flex-direction: column;
     position: fixed;
     width: 40%;
-    padding: 2.5% 0 2.5% 0;
+    padding-top: 2.5%;
+    margin-bottom: 5%;
     background-color: black;
     color: white;
     height: 100vh;
@@ -79,6 +101,8 @@ p {
     padding: 5px;
     border-bottom: 2px solid white;
 }
+
+
 
 .right-container .contents {
     flex:5;

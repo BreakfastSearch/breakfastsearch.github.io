@@ -1,19 +1,21 @@
 let articles = [
+    '031018_Schedule.html',
     'welcome.html',
-    '031018_Schedule.html'
 ]
 
+var client = []
+
 for (let i = 0; i < articles.length; i++) {
-    var client = new XMLHttpRequest();
-    client.open('GET', articles[i]);
+    client.push(new XMLHttpRequest());
+    client[i].open('GET', articles[i]);
     let content = document.createElement('article')
 
-    client.onreadystatechange = function() {
-      content.innerHTML = client.responseText
+    client[i].onreadystatechange = function() {
+      content.innerHTML = client[i].responseText
     }
     console.log(content)
     document.querySelector('.content').appendChild(content);
 
-    client.send();
+    client[i].send();
 }
 
