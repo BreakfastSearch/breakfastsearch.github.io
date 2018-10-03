@@ -25,15 +25,9 @@ article {
     flex-direction: row;
 }
 
-@media (max-width: 600px) {
-    .main-container {
-        flex-direction: column
-    }
-
-    .left-container {
-        width: 100%;
-        margin: 0;
-    }
+.title {
+    font-weight: bold;
+    font-size: 48px;
 }
 
 .left-container {
@@ -75,7 +69,7 @@ article {
     width: 40%;
     padding-top: 2.5%;
     margin-bottom: 5%;
-    background-color: black;
+    background-image:url(bg.jpg);
     color: white;
     height: 100vh;
 }
@@ -124,4 +118,36 @@ article {
   width: 300px;
   height: 30px;
   margin: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .right-container {
+        position: relative;
+        width:100%;
+        justify-content: center;
+    }
+
+
+.right-container .contents {
+    flex:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+    .left-container {
+        position: relative;
+        flex:1;
+        width: 80%;
+        margin: 0;
+    }
+
+    #fun-pen {
+        display: none;
+    }
 }
