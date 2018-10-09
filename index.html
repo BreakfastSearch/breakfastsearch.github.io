@@ -13,20 +13,20 @@
   <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
 
-  <script src='mouseSpeed.js' defer></script>
-  <script src="app.js" defer></script>
+  <script src='funPens/mouseSpeed.js' defer></script> 
+  <script src="getContent.js" defer></script>
   <script src="index.js" defer></script>
 
 </head>
 <body>
   <div class="main-container">
     <div class='right-container'>
-      <nav>
+      <nav >
         <ul>
-          <li id="contact">
+          <li id="contact-link">
             Contact
           </li>
-          <li id="about">
+          <li id="about-link">
             About
           </li>
         </ul>
@@ -49,18 +49,18 @@
     <div class='left-container'>
       <nav>
         <ul>
-          <li id="posts">
+          <li id="announcements-link">
             Posts
           </li>
-          <li id="resources">
+          <li id="resources-link">
             Resources
           </li>
         </ul>
       </nav>
-      <section class='content'>
-        
-      
-      </section>
+      <section class='content' id='announcements' ></section>
+      <section class='content' id='resources' ></section>
+      <section class='content' id='about' ></section>
+      <section class='content' id='contact' ></section>
       <nav><ul><li></li></ul></nav>
     </div>
   </div>

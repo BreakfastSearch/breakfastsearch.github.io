@@ -3,10 +3,13 @@ body {
 }
 
 p {
-    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-family: 'Bai Jamjuree';
 }
 
-
+.hidden {
+    display: none;
+}
 
 article h1 {
     font-size: 24px;
@@ -17,7 +20,8 @@ article {
 }
 
 :not(p) {
-    font-family: 'Bai Jamjuree'
+    font-size: 18px;
+    font-family: 'Bai Jamjuree';
 }
 
 .main-container {
@@ -69,13 +73,14 @@ article {
     width: 40%;
     padding-top: 2.5%;
     margin-bottom: 5%;
-    background-image:url(bg.jpg);
+    background-color: black;
     color: white;
     height: 100vh;
 }
 
 .right-container nav{
     flex:1;
+    
 }
 
 .right-container nav ul {

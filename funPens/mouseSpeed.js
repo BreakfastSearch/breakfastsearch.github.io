@@ -1,11 +1,11 @@
 var styleEl = document.createElement('style');
-styleEl.innerHTML = '#container {'
-  +  'display: flex;  width: 300px; flex-direction: row; border: 2px solid white; border-radius:10px}'
-  +  ' .typical {'
+styleEl.innerHTML = '#fun-pen {'
+  +  'display: flex;  width: 300px; flex-direction: row; border: 0px solid white; border-radius:10px}'
+  +  ' .pen-typical {'
   +  'flex:1; height: 30px; margin: 0px;'
   +  'background-color: black; border: 0px solid black;'
   +  'border-radius: 10px;transition: flex 1s, transform 0.5s;} '
-  + '.hidden {'
+  +  '.pen-hidden {'
   +'transform:translate(10px, 20px) rotate(90deg);'
   + 'flex: 1; transition:  transform 0.5s, flex 2s;'  
   +'}'
@@ -42,8 +42,8 @@ let length = 25
 let divs = []
 for (let i = 0; i < length; i++) {
   divs.push(document.createElement('div'))
-  divs[i].classList.add('hidden')
-  divs[i].classList.add('typical')
+  divs[i].classList.add('pen-hidden')
+  divs[i].classList.add('pen-typical')
   divs[i].style.backgroundColor = colors[(length-i)]
   document.getElementById('fun-pen').appendChild(divs[i]);
 }
@@ -64,10 +64,10 @@ function createGetMouseSpeed() {
     let temp = avgSpeed
     avgSpeed = (avgSpeed*199 + newSpeed)/200
     for (let j = 0; j < length; j++){
-      divs[j].classList.add('hidden')
+      divs[j].classList.add('pen-hidden')
     }
     for (let j = 0; j < Math.min(length, (avgSpeed)*length - 8); j++){
-      divs[j].classList.remove('hidden')
+      divs[j].classList.remove('pen-hidden')
     }
     xOrigin = xNew
     yOrigin = yNew
