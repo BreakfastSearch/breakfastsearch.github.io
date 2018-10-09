@@ -32,6 +32,7 @@ article {
 .title {
     font-weight: bold;
     font-size: 48px;
+    margin:10px;
 }
 
 .left-container {
@@ -52,7 +53,7 @@ article {
 
 .left-container nav ul li {
     font-size: 24px;
-    font-weight: light;
+    font-weight: bold;
     padding: 5px;
     border-bottom: 2px solid black;
 }
@@ -96,7 +97,7 @@ article {
 
 .right-container nav ul li {
     font-size: 24px;
-    font-weight: light;
+    font-weight: bold;
     padding: 5px;
     border-bottom: 2px solid white;
 }

@@ -19,7 +19,10 @@ const sections = [
     },
     {
     title: 'resources',
-    articles: []
+    articles: [
+        'links.html',
+        'coming_soon.html'
+    ]
     },
     {
     title: 'about',
