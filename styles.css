@@ -17,7 +17,11 @@ article h1 {
 }
 
 article {
-    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+article:last-child {
+    border-bottom: none;    
 }
 
 :not(p) {
