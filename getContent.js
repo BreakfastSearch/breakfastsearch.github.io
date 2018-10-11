@@ -14,6 +14,7 @@ const sections = [
     {
     title: 'announcements',
     articles: [
+    '061018_materials.html',
     '101018_Schedule.html',
     '031018_Schedule.html',
     'welcome.html']
@@ -21,6 +22,7 @@ const sections = [
     {
     title: 'resources',
     articles: [
+        '061018_materials.html',
         'links.html',
         'coming_soon.html'
     ]
