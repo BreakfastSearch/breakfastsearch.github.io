@@ -28,7 +28,7 @@ const sections = [
     {
     title: 'resources',
     articles: [
-        '../announcements/061018_materials.html',
+        '../announcements/181007_materials.html',
         'links.html',
         'coming_soon.html'
     ]
