@@ -14,9 +14,15 @@ const sections = [
     {
     title: 'announcements',
     articles: [
-    '061018_materials.html',
-    '101018_Schedule.html',
-    '031018_Schedule.html',
+    '181124_Schedule.html',
+    '181117_Schedule.html',
+    '181110_Schedule.html',
+    '181103_Schedule.html',
+    '181027_Schedule.html',
+    '181020_Schedule.html',
+    '181013_Schedule.html',
+    '181007_materials.html',
+    '181006_Schedule.html',
     'welcome.html']
     },
     {
